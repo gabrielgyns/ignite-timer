@@ -15,6 +15,7 @@ interface CyclesState {
   activeCycleId: string | null
 }
 
+// Using immer: https://github.com/gabrielgyns/ignite-timer/commit/b03811825c224316e60dbd679ce8e610f752b617
 export function cyclesReducer(state: CyclesState, action: any) {
   switch (action.type) {
     case ActionTypes.ADD_NEW_CYCLE:
